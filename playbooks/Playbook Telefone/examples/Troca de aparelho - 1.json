@@ -1,0 +1,144 @@
+{
+  "name": "3b2a31ba-2f9d-49ac-9f90-845eba8de6d3",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Ok, em que posso lhe ajudar sobre seu?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Eu quero fazer a troca dele"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi, para trocar o aparelho é necessário que o seu esteja inutilizável. Você pode me informar se o seu aparelho está ligando?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "como assim inutilizavel? o que isso quer dizer?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Inutilizável significa que o aparelho não está funcionando corretamente. Por exemplo, se ele não liga, se trava com frequência ou se a bateria não segura carga."
+    }
+  }, {
+    "userUtterance": {
+      "text": "ha ta entendi, sim ele liga"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "E quanto tempo ele fica ligado antes de travar e ficar inutilizável?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "uns 10, 15 minutos"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi. E depois que ele trava, você consegue ligar novamente?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "não, preciso desligar e esperar quase 30 min pra ligar de novo"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Nesse caso senhora Ivone, seu aparelho não é considerado inutilizável. Portanto, não é possível realizar a troca."
+    }
+  }, {
+    "userUtterance": {
+      "text": "como assim?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Nesse caso, seu aparelho não é considerado inutilizável. Portanto, não é possível realizar a troca."
+    }
+  }, {
+    "userUtterance": {
+      "text": "mas, depois que eu ligo ele, depois de 30 minutos eu ligo ele e ele trava novamente"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendo a frustação da senhora, mas infelizmente não podemos trocar seu aparelho se ele não for considerado inutilizável."
+    }
+  }, {
+    "userUtterance": {
+      "text": "quero falar com um agente agora, quero falar com alguém que possa me ajudar"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "se a senhora desejar posso te direcionar para um agente humano, o senhora deseja?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim claro, agora por favor"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, um minuto por favor senhora Ivoce. Só lembrando que o atendente que ira lhe atender ja sabe da nossa conversa então não é necessário nenhuma confirmação ou validação. Sinto muito não conseguir te ajudar. "
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/c7c744c7-ad46-43b3-9da7-cab7b26d4486",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+        "cpf_number": "99615639052",
+        "nm_cliente": "Ivone Lara"
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Exemplo 2 para suporte a linha muda",
+    "actionParameters": {
+      "bairro": "Interlagos",
+      "cep": "41599-101",
+      "email": "Ivone.Lara@xpto.com",
+      "endereco": "Rua das Canções, 420",
+      "nm_cliente": "Ivone Lara",
+      "planos_telefonia": [ {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados e 10GB de internet + 5GB de bônus por 3 meses",
+        "id_plano": 1,
+        "nome_plano": "Conecta+ Fale à Vontade",
+        "valor_plano": "R$ 50,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados, WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 2,
+        "nome_plano": "Vozilimitado Total",
+        "valor_plano": "R$ 58,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": " Ligações ilimitadas para até 4 linhas adicionais da mesma operadora, SMS ilimitados, aplicativos de mensagem sem descontar da franquia de dados e 30GB de internet para compartilhar",
+        "id_plano": 3,
+        "nome_plano": "Plano Falante Família",
+        "valor_plano": "R$ 67,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações com minutos controlados (ex: 300 minutos para qualquer operadora), SMS com quantidade definida (ex: 500 SMS) e 15GB de internet. Ideal para quem usa pouco o telefone.",
+        "id_plano": 4,
+        "nome_plano": "Conexão Total Controle",
+        "valor_plano": "R$ 85,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, minutos para ligações internacionais (ex: 100 minutos), WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 5,
+        "nome_plano": "Fale Mais Internacional",
+        "valor_plano": "R$ 93,00"
+      } ],
+      "telefonia": [ 1, "Vozilimitado Total" ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Verifico se a linha esta muda",
+    "actionParameters": {
+      "cpf_number": "99615639052",
+      "nm_cliente": "Ivone Lara"
+    }
+  },
+  "displayName": "Troca de aparelho - 1",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

@@ -1,0 +1,74 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "humano",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "agente",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "agente humano",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "quero falar com",
+      "parameterId": "url",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "um",
+      "parameterId": "date-time",
+      "auto": true
+    }, {
+      "text": " agente",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "me direcione ",
+      "auto": true
+    }, {
+      "text": "para um",
+      "parameterId": "date-time",
+      "auto": true
+    }, {
+      "text": " humano",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "quero falar com",
+      "parameterId": "url",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "um",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " humano",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  } ]
+}

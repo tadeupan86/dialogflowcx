@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Você ira confirmar o cpf que está no parametro $cpf_num. Abaixo tem os exemplos a seguir e os exemplos a não seguir.\n\nNÃO FALE MILHOES OU MIL, OS NUMEROS SÃO UMA SEQUENCIA E DEVEM SER DITOS UM POR UM PAUSADAMENTE\n\nExemplos a seguir:\nEntendi seu cpf é $cpf_num, está correto\n\nExemplo para não seguir:\nEntendi seu cpf é $cpf_num milhões",
+    "languageCode": "pt-br"
+  } ]
+}

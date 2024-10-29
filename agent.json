@@ -1,0 +1,59 @@
+{
+  "defaultLanguageCode": "pt-br",
+  "timeZone": "America/Buenos_Aires",
+  "enableLogging": true,
+  "projectNumber": 570626036202,
+  "speechToTextSettings": {
+    "enableSpeechAdaptation": true
+  },
+  "startFlow": "Default Start Flow",
+  "enableStackdriverLogging": true,
+  "enableSpellCorrection": true,
+  "advancedSettings": {
+    "enabled": true,
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      },
+      "models": [ {
+        "key": "pt-br",
+        "value": "phone_call"
+      } ]
+    },
+    "playbackInterruptionSettings": {
+      "allowPlaybackInterruption": true
+    },
+    "loggingSettings": {
+      "enableStackdriverLogging": true,
+      "enableInteractionLogging": true
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "textToSpeechSettings": {
+    "synthesizeSpeechConfigs": [ {
+      "key": "pt-br",
+      "value": {
+        "voice": {
+          "name": "pt-BR-Wavenet-C",
+          "ssmlGender": "SSML_VOICE_GENDER_FEMALE"
+        }
+      }
+    } ]
+  },
+  "duplexSettings": {
+  
+  },
+  "answerFeedbackSettings": {
+  
+  },
+  "enableMultiLanguageTraining": true,
+  "webClientSettings": {
+    "boxBorderRadius": "0"
+  }
+}

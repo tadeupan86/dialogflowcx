@@ -1,0 +1,56 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "só se for ",
+      "auto": true
+    }, {
+      "text": "agora",
+      "parameterId": "date-time",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "opa com",
+      "parameterId": "url",
+      "auto": true
+    }, {
+      "text": " certeza",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "claro",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "quero sim",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "sim",
+      "parameterId": "person",
+      "auto": true
+    }, {
+      "text": " quero o que preciso fazer?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "Sim quero sim?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  } ]
+}

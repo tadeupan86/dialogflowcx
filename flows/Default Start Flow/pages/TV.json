@@ -1,0 +1,27 @@
+{
+  "name": "c62ff6d3-5647-496b-89bb-b46e23b76fda",
+  "displayName": "TV",
+  "form": {
+    "parameters": [ {
+      "displayName": "solicitacao",
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "defaultValue": "televisao"
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Verifica Pendencias",
+    "name": "c9c0e6d9-9c4f-447e-aca0-3d7d08941ada"
+  } ]
+}

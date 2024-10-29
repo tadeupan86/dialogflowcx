@@ -1,0 +1,10 @@
+{
+  "name": "76ca1116-d56f-4d83-bcd3-f4897c77e825",
+  "displayName": "Confirmação Direciona para Contas",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 10
+}

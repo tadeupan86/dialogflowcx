@@ -1,0 +1,79 @@
+{
+  "name": "24996cea-4330-47de-b7f7-e1637433a467",
+  "displayName": "Verifica Solicitação",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$request.generative.output" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "generators": [ {
+      "generator": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/generators/ac9d850a-f0a7-4e9c-9f09-02bc4ec3faa9",
+      "inputParameters": [ {
+        "key": "nm_cliente",
+        "value": "$session.params.nm_cliente"
+      } ],
+      "outputParameter": "$request.generative.output"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "Intents Internet",
+    "condition": "$page.params.status = \"FINAL\" OR $session.params.solicitacao != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Internet",
+    "name": "990996cd-73ec-473c-901b-815d73343f2e"
+  }, {
+    "intent": "Intent TV",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "TV",
+    "name": "e6ac220a-a246-40f7-be6d-ba700356994e"
+  }, {
+    "intent": "Intent Contas",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Contas Flow",
+    "name": "42312019-0448-4840-bad9-25efb4be14fc"
+  }, {
+    "intent": "intent telefone",
+    "condition": "$session.params.solicitacao != null OR $page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Telefonia",
+    "name": "65ef11d0-5ae6-4f47-9631-9dffaf4e4daf"
+  }, {
+    "intent": "Falar Com Humano",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Direciona para Humano",
+    "name": "3f4bbc2c-8181-43f8-b081-d25d1f5734ea"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-1",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Não entendi, escolha por favor entre internet, televisão, telefonia ou faturas" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "3fb638e2-a059-4489-8128-5d6c80ff60a5"
+  } ]
+}

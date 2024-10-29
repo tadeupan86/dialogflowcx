@@ -1,0 +1,26 @@
+{
+  "name": "891d9fc5-7e7b-43ff-9902-ea9232f467be",
+  "displayName": "Opção 1 Suporte Técnico",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Se você esta com problemas de conexão, digite 1", "Se o problema esta relacionado ao aparelho, digite 2", "Para falar com um atendente técnico, digito 3" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Submenu de Suporte Técnico",
+    "name": "e2826883-ea15-411b-a77f-e4772b1a932f"
+  } ]
+}

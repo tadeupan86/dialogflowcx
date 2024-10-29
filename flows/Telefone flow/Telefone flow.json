@@ -1,0 +1,49 @@
+{
+  "name": "0cbb9848-1418-4741-a46f-985c8d0f6372",
+  "displayName": "Telefone flow",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "name": "14a89599-d420-49b4-bc15-e88a9bf67bab",
+    "targetPlaybook": "Playbook Telefone"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "257f8c01-4aa3-4bc7-8e1a-6f28b875d3c5"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "16f08a69-2b10-477d-83d9-04c8cbdff69b"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "d7cd0f0f-8b37-4dd0-abd7-c1a4bd7ae816",
+    "languageCode": "pt-br"
+  } ],
+  "multiLanguageSettings": {
+    "enableMultiLanguageDetection": true,
+    "supportedResponseLanguageCodes": [ "pt-br" ]
+  }
+}

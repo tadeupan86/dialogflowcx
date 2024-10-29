@@ -1,0 +1,45 @@
+{
+  "name": "15da4c9e-542d-4320-9e43-28d3d5cbe6a6",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Vamos lá, Barabara Borges! Em que posso te ajudar no assunto faturas?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "quero saber se estou devendo"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Claro, vejo aqui que não há pendências. Mais alguma dúvida?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "não"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Auxilia o cliente com a solicitação de parcelamento em até 2 vezes e com a emissão de novas faturas com novas datas de vencimento e se conseguir auxiliar finalize o contato, caso não, encaminhe para atendimento humano",
+    "actionParameters": {
+      "email": "Barbara.Borges@xpto.com",
+      "nm_cliente": "Barbara Borges",
+      "pendentes": [ ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Acabou a conversa"
+  },
+  "displayName": "contas_negociacao_sempendencia_semduvida",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

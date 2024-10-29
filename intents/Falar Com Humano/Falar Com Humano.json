@@ -1,0 +1,16 @@
+{
+  "name": "421a0822-ccf2-4591-9f88-3df7b90e560f",
+  "displayName": "Falar Com Humano",
+  "parameters": [ {
+    "id": "url",
+    "entityType": "@sys.url"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 6
+}

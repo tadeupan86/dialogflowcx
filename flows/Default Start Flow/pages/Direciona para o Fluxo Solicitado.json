@@ -1,0 +1,32 @@
+{
+  "name": "0cf2b8ed-c9d3-46bd-ad4e-5497878105ba",
+  "displayName": "Direciona para o Fluxo Solicitado",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.solicitacao = internet",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Internet Flow",
+    "name": "7d3fa3ca-5583-4c35-964f-cae0b3b7525f"
+  }, {
+    "condition": "$session.params.solicitacao = televisão OR $session.params.solicitacao = Televisão OR $session.params.solicitacao = televisao OR $session.params.solicitacao = Televisao OR $session.params.solicitacao = TV OR $session.params.solicitacao = tv",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "TV Flow",
+    "name": "927933d2-d81d-44bb-b613-5a57f1d13424"
+  }, {
+    "condition": "$session.params.solicitacao = telefone OR $session.params.solicitacao = telefonia OR $session.params.solicitacao = telco OR $session.params.solicitacao = Telefone OR $session.params.solicitacao = Telefonia OR $session.params.solicitacao = Telco OR $session.params.solicitacao = Fone OR $session.params.solicitacao = fone",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Telefone flow",
+    "name": "06e7d362-d603-4d85-93e5-0e532a72a846"
+  } ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "ffa720b1-21c3-4698-bbee-9e8ae56ccbbf",
+  "displayName": "Verificação de Novo Cliente",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$request.generative.output.\nOu você deseja inserir o cpf novamente?" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "generators": [ {
+      "generator": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/generators/d3aba794-1de0-4b78-8d60-79f83b972941",
+      "outputParameter": "$request.generative.output"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "Intent Afirmacação Cliente Bluenet",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok então, vou lhe pedir algumas informações e iremos retornar o contato." ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Dados Novo Cliente",
+    "name": "b254c8f2-8215-4e5f-b622-fea241a1445a"
+  }, {
+    "intent": "Intent Negação Cliente Bluenet",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.generative.output" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "generators": [ {
+        "generator": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/generators/a5fefe7b-52c4-464e-8328-b6acf54c30fc",
+        "outputParameter": "$request.generative.output"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Session",
+    "name": "f8d75fff-f2a9-46d8-98bf-ea7f55d153a7"
+  }, {
+    "intent": "Inserir Novamente Cpf",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Solicita CPF",
+    "name": "dba4d9c7-1f72-4532-a244-3b75412c1430"
+  } ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "0220586b-b234-400b-99d3-c89abab1f2ff",
+  "displayName": "Confirma CPF",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "O cpf informado é $session.params.cpf_number ,  está correto?" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "Intent Confirmação CPF",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Requisição Identificação",
+    "name": "88a053e2-5c1c-4f8f-8d23-aba623581ba7"
+  }, {
+    "intent": "Intent Negação CPF",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "cpf_number",
+        "value": null
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Solicita CPF",
+    "name": "0d1bc28b-e97c-4399-931f-16659f11671a"
+  } ]
+}

@@ -1,0 +1,130 @@
+{
+  "name": "58b488a6-52fb-40e8-809a-e3ea061215f4",
+  "displayName": "Internet Flow",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Verifica Solicitação",
+    "name": "dd8a7b06-a8b1-4263-a292-5ff79519deef"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "317b7698-479a-4a55-b227-6e42424e1073"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "47960fc8-cbb4-41bc-8508-b544377481e6"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "04cd9246-0806-4b42-9aae-b8212a316f69",
+    "multiIntentSettings": {
+    
+    },
+    "languageCode": "pt-br"
+  } ],
+  "outputParameterDefinitions": [ {
+    "name": "bairro",
+    "description": "bairro do cliente",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  }, {
+    "name": "cep",
+    "description": "numero do cep",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  }, {
+    "name": "email",
+    "description": "o email do cliente",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  }, {
+    "name": "nm_cliente",
+    "description": "o nome do cliente",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  }, {
+    "name": "endereco",
+    "description": "O endereço do cliente",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  }, {
+    "name": "cpf_number",
+    "description": "o cpf do cliente",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  }, {
+    "name": "planos_internet",
+    "description": "lista com os planos disponíveis",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "ARRAY",
+        "items": {
+          "inlineSchema": {
+            "type": "STRING"
+          }
+        }
+      }
+    }
+  }, {
+    "name": "internet",
+    "description": "o plano atual do cliente",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  } ],
+  "multiLanguageSettings": {
+    "enableMultiLanguageDetection": true,
+    "supportedResponseLanguageCodes": [ "pt-br" ]
+  }
+}

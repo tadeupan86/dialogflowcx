@@ -1,0 +1,98 @@
+{
+  "name": "e7820710-d805-4d31-a774-dc96ed19fc04",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Vamos lá Barbara Borges, nesse ponto eu posso te ajudar com suporte a sua linha, alteração do seu plano, informações sobre o seu plano e até mesmo a troca do seu aparelho. O que você precisa?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Minha linha está muda"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendo, vamos verificar o que está acontecendo. Você está em São Paulo?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Sim estou"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi, quando você tenta fazer uma ligação chega a conectar a ligação, você escuta o tom de chamando no telefone?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Não escuto não, da linha mas não escuto chamando no outro lado"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi Barbara Borges, vamos fazer o seguinte, eu vi aqui que parece que é um problema com as torres da sua região. Já fiz a solicitação para a equipe de manutenção. \nAgora eu oriento que aguarde porque você será atualizada no seu app quando o problema for resolvido.\nAjudo em algo mais?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Não, ja me ajudou, muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Exemplo para suporte a linha muda",
+    "actionParameters": {
+      "bairro": "Bras",
+      "cep": "12231-001",
+      "email": "Barbara.Borges@xpto.com",
+      "endereco": "Rua do Engenho, 111",
+      "nm_cliente": "Barbara Borges",
+      "planos_telefonia": [ {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados e 10GB de internet + 5GB de bônus por 3 meses",
+        "id_plano": 1,
+        "nome_plano": "Conecta+ Fale à Vontade",
+        "valor_plano": "R$ 50,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados, WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 2,
+        "nome_plano": "Vozilimitado Total",
+        "valor_plano": "R$ 58,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": " Ligações ilimitadas para até 4 linhas adicionais da mesma operadora, SMS ilimitados, aplicativos de mensagem sem descontar da franquia de dados e 30GB de internet para compartilhar",
+        "id_plano": 3,
+        "nome_plano": "Plano Falante Família",
+        "valor_plano": "R$ 67,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações com minutos controlados (ex: 300 minutos para qualquer operadora), SMS com quantidade definida (ex: 500 SMS) e 15GB de internet. Ideal para quem usa pouco o telefone.",
+        "id_plano": 4,
+        "nome_plano": "Conexão Total Controle",
+        "valor_plano": "R$ 85,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, minutos para ligações internacionais (ex: 100 minutos), WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 5,
+        "nome_plano": "Fale Mais Internacional",
+        "valor_plano": "R$ 93,00"
+      } ],
+      "telefonia": "[ 1, Vozilimitado Total ]"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Verifico se a linha esta muda",
+    "actionParameters": {
+      "nm_cliente": "Barbara Borges"
+    }
+  },
+  "displayName": "Linha muda - 1",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

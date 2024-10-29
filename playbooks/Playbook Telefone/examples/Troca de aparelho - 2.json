@@ -1,0 +1,124 @@
+{
+  "name": "6b7d5542-99dc-4a9d-8157-96dd0e10664a",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Vamos lá senhor Jose, em que posso lhe ajudar no que diz respeito ao seu aparelho?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "meu aparelho está muito ruim, tanto que estou falando do telefone da minha epsosa, quero saber se consigo trocar ele"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi, para trocar o aparelho é necessário que o seu esteja inutilizável. Você pode me informar se o seu aparelho está ligando?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "de vez em quando ele liga, a ultima vez que ele ligou foi ontem"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "E quanto tempo ele fica ligado antes de travar e ficar inutilizável?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "nem chega a ligar, ele pisca a tela depois apaga"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi, nesse caso seu aparelho é considerado inutilizável. Para realizar a troca, preciso confirmar alguns dados com você. Você pode me informar o seu CPF?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "08820343088"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, e o seu email?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "José.de.Alencar@xpto.com"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Certo, vou realizar a troca do seu aparelho. Você irá receber um e-mail com a confirmação da troca e em até 5 dias uteis o senhor ira receber o aparelho no endereço Rua Humaitá, 971, Jardins. O senhor ficou com alguma dúvida?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Então quando o aparelho chegar é só eu colocar meu chip nele que ele vai funcionar?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Isso mesmo, quando o aparelho chegar, basta inserir o seu chip e ele estará pronto para uso."
+    }
+  }, {
+    "userUtterance": {
+      "text": "Entendi, muito obrigado!"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Exemplo 2 para suporte a linha muda",
+    "actionParameters": {
+      "bairro": "Jardins",
+      "cep": "31311-009",
+      "cpf_number": "08820343088",
+      "email": "José.de.Alencar@xpto.com",
+      "endereco": "Rua Humaitá, 971",
+      "nm_cliente": "José de Alencar",
+      "planos_telefonia": [ {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados e 10GB de internet + 5GB de bônus por 3 meses",
+        "id_plano": 1,
+        "nome_plano": "Conecta+ Fale à Vontade",
+        "valor_plano": "R$ 50,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados, WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 2,
+        "nome_plano": "Vozilimitado Total",
+        "valor_plano": "R$ 58,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": " Ligações ilimitadas para até 4 linhas adicionais da mesma operadora, SMS ilimitados, aplicativos de mensagem sem descontar da franquia de dados e 30GB de internet para compartilhar",
+        "id_plano": 3,
+        "nome_plano": "Plano Falante Família",
+        "valor_plano": "R$ 67,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações com minutos controlados (ex: 300 minutos para qualquer operadora), SMS com quantidade definida (ex: 500 SMS) e 15GB de internet. Ideal para quem usa pouco o telefone.",
+        "id_plano": 4,
+        "nome_plano": "Conexão Total Controle",
+        "valor_plano": "R$ 85,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, minutos para ligações internacionais (ex: 100 minutos), WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 5,
+        "nome_plano": "Fale Mais Internacional",
+        "valor_plano": "R$ 93,00"
+      } ],
+      "telefonia": [ 1, "Fale Mais Internacional" ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Verifico se a linha esta muda",
+    "actionParameters": {
+      "cpf_number": "99615639052",
+      "nm_cliente": "Ivone Lara"
+    }
+  },
+  "displayName": "Troca de aparelho - 2",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

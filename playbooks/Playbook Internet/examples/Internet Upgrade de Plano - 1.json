@@ -1,0 +1,94 @@
+{
+  "name": "dbbaacf2-7d0e-48fa-a973-f9ba14970297",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Certo $nm_cliente. Por aqui eu posso te ajudar com informações sobre seu plano de internet, alteração de plano ou suporte técnico. O que você deseja?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "qual é o meu plano atual?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "O seu plano atual é o Wi-Fi Power 1 Giga."
+    }
+  }, {
+    "userUtterance": {
+      "text": "e quais as outras opções de planos disponiveis?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Gustavo Pereira, temos os seguintes planos disponíveis:\n- Fibra Turbo 100 Mega: Velocidade de download de até 100 Mbps, Wi-Fi de alta performance incluso e instalação grátis.\n- Navegação Ilimitada 200 Mega: Velocidade de download de até 200 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso e assinatura de streaming de música grátis por 6 meses.\n- Mega Velocidade 500 Mega: Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.\n- Conexão Express 300 Mega: Velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.\n- Wi-Fi Power 1 Giga: Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.\nQual plano você deseja contratar?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "entendi, eu queria aumentar o meu plano, mas vi que ja tenho o mais alto"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sim, você já possui o plano mais completo que oferecemos. Lhe ajudo em algo mais?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "entendi, não, muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "O cliente deseja fazer um upgrade do plano de internet dele.\nConfirme o plano atual \nPergunte qual o novo plano\nConfirme o novo plano",
+    "actionParameters": {
+      "bairro": "Gamelinha",
+      "cep": "39123-010",
+      "cpf_number": "51778378072",
+      "email": "Gustavo.Pereira@xpto.com",
+      "endereco": "Rua Oscar Porto, 400",
+      "internet": "[1, Wi-Fi Power 1 Giga]",
+      "nm_cliente": "Gustavo Pereira",
+      "planos_internet": [ {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 100 Mbps, Wi-Fi de alta performance incluso e instalação grátis.",
+        "id_plano": 6,
+        "nome_plano": "Fibra Turbo 100 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 200 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso e assinatura de streaming de música grátis por 6 meses.",
+        "id_plano": 7,
+        "nome_plano": "Navegação Ilimitada 200 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.",
+        "id_plano": 8,
+        "nome_plano": "Mega Velocidade 500 Mega:"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.",
+        "id_plano": 9,
+        "nome_plano": "Conexão Express 300 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.",
+        "id_plano": 10,
+        "nome_plano": "Wi-Fi Power 1 Giga"
+      } ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Termina o auxilio e o direciona para o final",
+    "actionParameters": {
+      "nm_cliente": "Gustavo Pereira"
+    }
+  },
+  "displayName": "Internet Upgrade de Plano - 1",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

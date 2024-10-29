@@ -1,0 +1,41 @@
+{
+  "name": "07b2c05d-1875-4dd2-8737-797782698bc1",
+  "displayName": "Direciona",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Posso te ajudar em mais alguma coisa?", "Gostaria de mais algum esclarecimento?" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "Direciona_sim",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Ok $session.params.nm_cliente, estarei te encaminhando ao menu inicial." ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "b5472327-536a-401c-b8fa-79881f6c2f4f"
+  }, {
+    "intent": "Direciona_nao",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Finaliza",
+    "name": "c94b02df-6130-4b8f-aa6b-6b1b74bb9162"
+  } ]
+}

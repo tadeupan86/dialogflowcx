@@ -1,0 +1,29 @@
+{
+  "name": "7725d897-55cc-4585-94d2-a6d06ce3495c",
+  "displayName": "Internet",
+  "form": {
+    "parameters": [ {
+      "displayName": "solicitacao",
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "defaultValue": "internet"
+    } ]
+  },
+  "entryFulfillment": {
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Verifica Pendencias",
+    "name": "73f703cc-b707-4d11-9660-0044b30676b3"
+  } ]
+}

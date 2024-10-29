@@ -1,0 +1,40 @@
+{
+  "name": "f71d3c2b-9f3f-46e3-ae42-56ee91853781",
+  "displayName": "Atendimento ao usuario",
+  "form": {
+    "parameters": [ {
+      "displayName": "Menu",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Olá sou agente virtual que posso lhe ajudar?" ]
+            },
+            "languageCode": "pt-br"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params = \"FINAL\"",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Suporte",
+    "name": "2574033e-63d0-4a61-94e4-7331f0d55b56"
+  } ],
+  "description": "Usuario"
+}

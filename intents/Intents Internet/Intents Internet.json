@@ -1,0 +1,13 @@
+{
+  "name": "e5e6eed3-db06-42ab-9b4e-b9abddee7da7",
+  "displayName": "Intents Internet",
+  "parameters": [ {
+    "id": "url",
+    "entityType": "@sys.url"
+  }, {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 7
+}

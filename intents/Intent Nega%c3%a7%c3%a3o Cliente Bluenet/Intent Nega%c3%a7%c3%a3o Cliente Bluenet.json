@@ -1,0 +1,13 @@
+{
+  "name": "3507c586-84e9-40e7-90f6-e70975605794",
+  "displayName": "Intent Negação Cliente Bluenet",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  }, {
+    "id": "location",
+    "entityType": "@sys.location"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 8
+}

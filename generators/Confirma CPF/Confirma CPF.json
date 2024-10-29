@@ -1,0 +1,17 @@
+{
+  "name": "c7ea69ac-7132-4679-8118-5ce971841458",
+  "displayName": "Confirma CPF",
+  "placeholders": [ {
+    "id": "cpf_num",
+    "name": "cpf_num"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

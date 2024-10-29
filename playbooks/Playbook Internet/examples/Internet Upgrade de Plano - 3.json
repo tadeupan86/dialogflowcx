@@ -1,0 +1,134 @@
+{
+  "name": "70f55e04-f427-4e5b-9aa9-49db1ab4c56f",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Certo Paulo Munhoz. Por aqui eu posso te ajudar com informações sobre seu plano de internet, alteração de plano ou suporte técnico. O que você deseja?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "qual é o meu plano?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Paulo Munhoz, você possui o plano Fibra Turbo 100 Mega."
+    }
+  }, {
+    "userUtterance": {
+      "text": "eu consigo fazer um upgrade dele?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sim, $nm_cliente, você pode fazer o upgrade do seu plano. Quais são as suas necessidades de internet?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "quanto eu tenho hoje de internet?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Você possui o plano Fibra Turbo 100 Mega, que oferece velocidade de download de até 100 Mbps."
+    }
+  }, {
+    "userUtterance": {
+      "text": "preciso de acima de 300 megas"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Temos os seguintes planos disponíveis com velocidade acima de 300 Mbps:\n- Mega Velocidade 500 Mega: Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.\n- Wi-Fi Power 1 Giga: Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.\nQual plano você deseja contratar?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "qual a diferença de preço entre eles?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "A diferença de preço entre os planos Mega Velocidade 500 Mega e Wi-Fi Power 1 Giga é de R$ 30,00. O plano Mega Velocidade 500 Mega custa R$ 120,00 por mês e o plano Wi-Fi Power 1 Giga custa R$ 150,00 por mês."
+    }
+  }, {
+    "userUtterance": {
+      "text": "gostei, vou fechar o primeiro o de 500 megas"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, para atualizar seu plano para o Mega Velocidade 500 Mega, preciso confirmar alguns dados. O seu cpf é 56594123009 correto?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim esse mesmo"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "o email do solicitante é Paulo.Munhoz@xpto.com está correto?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "isso"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok,  Paulo Munhoz, vou processar a atualização do seu plano para o Mega Velocidade 500 Mega. Você receberá um e-mail com a confirmação da alteração.\nA atualização pode demorar até 8 horas para fazer efeito então pedimos que aguarde esse período para testar a nova velocidade, em alguns casos a atualização não demora tanto.\nLembrando também que a fatura desse mês constará duas cobranças proporicionais, uma da utilização do plano antigo desde o inicio do mês até hoje e outra com o novo plano contando de amanhã até o dia de fechamento da fatura.\nFicou alguma dúvida?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "não nenhuma"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "O cliente deseja fazer um upgrade do plano de internet dele.\nConfirme o plano atual \nPergunte qual o novo plano\nConfirme o novo plano",
+    "actionParameters": {
+      "bairro": "Piratininga",
+      "cep": "83173-130",
+      "cpf_number": "56594123009",
+      "email": "Paulo.Munhoz@xpto.com",
+      "endereco": "Avenida Alcantara Machado, 3512",
+      "internet": "[1,Fibra Turbo 100 Mega]",
+      "nm_cliente": "Paulo Munhoz",
+      "planos_internet": [ {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 100 Mbps, Wi-Fi de alta performance incluso e instalação grátis.",
+        "id_plano": 6,
+        "nome_plano": "Fibra Turbo 100 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 200 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso e assinatura de streaming de música grátis por 6 meses.",
+        "id_plano": 7,
+        "nome_plano": "Navegação Ilimitada 200 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.",
+        "id_plano": 8,
+        "nome_plano": "Mega Velocidade 500 Mega:"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.",
+        "id_plano": 9,
+        "nome_plano": "Conexão Express 300 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.",
+        "id_plano": 10,
+        "nome_plano": "Wi-Fi Power 1 Giga"
+      } ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Termina o auxilio e o direciona para o final",
+    "actionParameters": {
+      "nm_cliente": "Gustavo Pereira"
+    }
+  },
+  "displayName": "Internet Upgrade de Plano - 3",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

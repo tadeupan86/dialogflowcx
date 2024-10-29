@@ -1,0 +1,13 @@
+{
+  "name": "a5fefe7b-52c4-464e-8328-b6acf54c30fc",
+  "displayName": "Despedida Novo Cliente",
+  "modelParameter": {
+    "temperature": 0.30000001,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

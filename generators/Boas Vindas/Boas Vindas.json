@@ -1,0 +1,13 @@
+{
+  "name": "2e74f967-0eeb-42c5-90c2-8695bae391fa",
+  "displayName": "Boas Vindas",
+  "modelParameter": {
+    "temperature": 0.30000001,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-pro"
+  }
+}

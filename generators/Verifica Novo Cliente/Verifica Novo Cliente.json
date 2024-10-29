@@ -1,0 +1,13 @@
+{
+  "name": "d3aba794-1de0-4b78-8d60-79f83b972941",
+  "displayName": "Verifica Novo Cliente",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

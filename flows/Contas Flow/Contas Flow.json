@@ -1,0 +1,92 @@
+{
+  "name": "ae1a30f8-54a8-4a82-ad3a-16a136201c12",
+  "displayName": "Contas Flow",
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Redireciona",
+    "name": "04f64794-b5dd-471c-bf13-b62ff70f3bd3"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "3b4a7c20-538c-4e69-8980-4c05fedacc0a"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Lamento, mas não compreendi.", "Desculpe, mas não compreendi.", "Infelizmente, não captei o que deseja.", "Não consegui compreender, desculpe." ]
+        },
+        "languageCode": "pt-br"
+      } ]
+    },
+    "name": "5dda88ce-03c5-49cc-98f8-189126fe42a9"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "multiIntentSettings": {
+    
+    }
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "c4e2437a-a7b4-44bc-b64c-909e30231b08",
+    "multiIntentSettings": {
+    
+    },
+    "languageCode": "pt-br"
+  } ],
+  "inputParameterDefinitions": [ {
+    "name": "pendentes",
+    "description": "Faturas abertas",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "ARRAY",
+        "items": {
+          "inlineSchema": {
+            "type": "STRING"
+          }
+        }
+      }
+    }
+  }, {
+    "name": "nm_cliente",
+    "description": "nome do cliente",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  }, {
+    "name": "email",
+    "description": "email do cliente",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "STRING"
+      }
+    }
+  } ],
+  "multiLanguageSettings": {
+    "enableMultiLanguageDetection": true,
+    "supportedResponseLanguageCodes": [ "pt-br" ]
+  }
+}

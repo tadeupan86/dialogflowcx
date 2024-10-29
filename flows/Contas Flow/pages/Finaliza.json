@@ -1,0 +1,18 @@
+{
+  "name": "16c09acf-2dc3-4f5c-b62e-653a70637352",
+  "displayName": "Finaliza",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Certinho ! Qualquer dúvida, só entrar em contato que estaremos aqui pra te ajudar. Até mais, $session.params.nm_cliente!" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "dddca501-3d76-4453-98d9-a0a8ee8c1372",
+  "displayName": "Direcionamento",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "payload": {
+        "ujet": {
+          "action": "escalation",
+          "escalation_reason": "by_virtual_agent",
+          "type": "action"
+        }
+      },
+      "languageCode": "pt-br"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "END_FLOW_WITH_HUMAN_ESCALATION",
+    "name": "df610f5a-c126-4263-8165-c87b69854b60"
+  } ]
+}

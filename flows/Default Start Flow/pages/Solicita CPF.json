@@ -1,0 +1,52 @@
+{
+  "name": "7e0e43d2-45bd-4a9b-9c6b-4278e6f3d149",
+  "displayName": "Solicita CPF",
+  "form": {
+    "parameters": [ {
+      "displayName": "cpf_number",
+      "required": true,
+      "entityType": "@sys.number-sequence",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "$request.generative.outpout_solicita_cpf" ]
+            },
+            "languageCode": "pt-br"
+          } ],
+          "generators": [ {
+            "generator": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/generators/5b8d5a85-07a2-41af-b0d7-5ac0a1f1a8a0",
+            "outputParameter": "$request.generative.outpout_solicita_cpf"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      },
+      "advancedSettings": {
+        "dtmfSettings": {
+          "enabled": true,
+          "maxDigits": 11,
+          "useSystemEntityRule": false,
+          "interdigitTimeoutDuration": {
+            "seconds": 5
+          },
+          "endpointingTimeoutDuration": {
+            "seconds": 5
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirma CPF",
+    "name": "7182f670-e48b-4d2d-a0de-84b95c5e859a"
+  } ]
+}

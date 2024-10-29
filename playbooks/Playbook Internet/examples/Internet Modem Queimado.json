@@ -1,0 +1,90 @@
+{
+  "name": "7e936de9-bb86-4c4c-9d9f-b32b91fe31c9",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Vamos lá Christian, qual a sua duvida? Lembrando que aqui eu posso lhe ajudar com verificação de plano, atualização do plano e suporte técnico."
+    }
+  }, {
+    "userUtterance": {
+      "text": "meu modem não esta ligando, eu acho que ele queimou"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Christian, para solucionar o problema do seu modem, você pode tentar reiniciá-lo. Para isso, desligue o modem da tomada, aguarde 20 segundos e ligue-o novamente. Isso pode resolver o problema.\nQuando ligar novamente o equipamento por favor me informe"
+    }
+  }, {
+    "userUtterance": {
+      "text": "eu ja fiz isso antes e  não resolveu, até troquei de tomada já e nada"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi, nesse caso o modem deve ter queimado mesmo. Vou agendar uma visita técnica para você. Um técnico irá até sua residência para verificar o problema e resolvê-lo. Por favor, me informe um bom horário para a visita."
+    }
+  }, {
+    "userUtterance": {
+      "text": "pode ser na sexta as duas da tarde"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Pronto, agendei uma visita técnica para sexta-feira às 14:00. O técnico irá até sua residência no endereço Rua Sergipe, 541, para verificar o problema e resolvê-lo. Você receberá uma mensagem de confirmação com o horário exato da visita.\nAjudo com mais alguma coisa Christian?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "não ja me ajudou muito, muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Auxilia o cliente com a solicitação sobre internet e se conseguir auxiliar finalize o contato, caso não agende uma visita técnica",
+    "actionParameters": {
+      "bairro": "Brás",
+      "cep": "31231-908",
+      "email": "chris@blue.com.br",
+      "endereco": "Rua Sergipe, 541",
+      "internet": "[1, Fibra Turbo 100 Mega]",
+      "nm_cliente": "Manuel de Andrade",
+      "planos_internet": [ {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 100 Mbps, Wi-Fi de alta performance incluso e instalação grátis.",
+        "id_plano": 6,
+        "nome_plano": "Fibra Turbo 100 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 200 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso e assinatura de streaming de música grátis por 6 meses.",
+        "id_plano": 7,
+        "nome_plano": "Navegação Ilimitada 200 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.",
+        "id_plano": 8,
+        "nome_plano": "Mega Velocidade 500 Mega:"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.",
+        "id_plano": 9,
+        "nome_plano": "Conexão Express 300 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.",
+        "id_plano": 10,
+        "nome_plano": "Wi-Fi Power 1 Giga"
+      } ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "acabou a conversa"
+  },
+  "displayName": "Internet Modem Queimado",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

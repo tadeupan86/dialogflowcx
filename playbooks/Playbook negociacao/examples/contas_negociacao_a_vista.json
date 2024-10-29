@@ -1,0 +1,69 @@
+{
+  "name": "91ec7eb2-a458-4887-a614-12c64765b555",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Ola Clovis, como posso te ajudar sobre as suas faturas"
+    }
+  }, {
+    "userUtterance": {
+      "text": "eu stou com uma pendencia e quero regularizar"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Claro, Clovis. Vejo aqui que você tem duas faturas em aberto, uma com vencimento em 2024-06-18 no valor de R$ 100,00 e outra com vencimento em 2024-07-18 no valor de R$ 151,00. Totalizando R$ 251,00. Você gostaria de parcelar esse valor?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "na verdade quero pagar a vista"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Claro, Clovis. Posso gerar uma nova fatura com o valor total de R$ 251,00 acrescido de R$ 3,00 de multa e juros. Qual a melhor data de vencimento para você?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "pode ser para o dia 15/10"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Clovis. Vou gerar uma nova fatura com vencimento para o dia 15/10 no valor de R$ 254,00 e enviar para o email clovis@teste.com. Confirmado?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Pefeito, em até 10 minutos você ira receber a fatura no seu email, ajudo em algo mais?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "não muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Auxilia o cliente com a solicitação de parcelamento em até 3 vezes e com a emissão de novas faturas com novas datas de vencimento e se conseguir auxiliar finalize o contato, caso não, encaminhe para atendimento humano",
+    "actionParameters": {
+      "email": "clovis@teste.com",
+      "nm_cliente": "clovis",
+      "pendentes": [ "Data Vencimento: 2024-06-18 - Valor: R$ 100.0", "Data Vencimento: 2024-07-18 - Valor: R$ 151.0" ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Acabou a conversa"
+  },
+  "displayName": "contas_negociacao_a_vista",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

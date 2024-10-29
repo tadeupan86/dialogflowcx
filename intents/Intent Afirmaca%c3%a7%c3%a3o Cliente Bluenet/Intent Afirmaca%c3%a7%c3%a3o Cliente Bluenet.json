@@ -1,0 +1,16 @@
+{
+  "name": "3482be14-9492-46e1-8781-9769820f4e7f",
+  "displayName": "Intent Afirmacação Cliente Bluenet",
+  "parameters": [ {
+    "id": "person",
+    "entityType": "@sys.person"
+  }, {
+    "id": "url",
+    "entityType": "@sys.url"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 6
+}

@@ -1,0 +1,22 @@
+{
+  "name": "0a8fd3fe-4bf4-4736-a45c-7975863ddfce",
+  "displayName": "Redireciona",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "webhook",
+    "tag": "get_faturas",
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "name": "f80c2982-acec-43f6-ba2a-5c4d4d25aae6",
+    "targetPlaybook": "Playbook negociacao"
+  } ]
+}

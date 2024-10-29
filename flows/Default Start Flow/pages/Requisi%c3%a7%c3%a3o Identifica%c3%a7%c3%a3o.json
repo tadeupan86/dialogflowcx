@@ -1,0 +1,50 @@
+{
+  "name": "ac0cb015-c126-4cce-b4d3-272beccdb34c",
+  "displayName": "Requisição Identificação",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "webhook",
+    "tag": "get_nm_usuario",
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.status_retorno = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Verifica Solicitação",
+    "name": "372d5503-9da2-44d1-b9d3-f754707ffc78"
+  }, {
+    "condition": "$session.params.status_retorno = false",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "cpf_number",
+        "value": null
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Verificação de Novo Cliente",
+    "name": "a5ded2fe-1281-4989-bc9c-225c3fd069da"
+  }, {
+    "condition": "$session.params.status_retorno = error",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "ATENÇÃO\nOcorreu um erro no wekbook tag \"get_nm_usuario\"\n\nFavor entrar em contato com o suporte" ]
+        },
+        "languageCode": "pt-br"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "End Session",
+    "name": "7e36721c-dad4-400e-b59c-e0b0fc81d4c6"
+  } ]
+}

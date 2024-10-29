@@ -1,0 +1,20 @@
+{
+  "name": "3202acba-4f18-4b3d-b5d2-ef8c6d22f94c",
+  "displayName": "Informa Pendencias",
+  "placeholders": [ {
+    "id": "pendentes",
+    "name": "pendentes"
+  }, {
+    "id": "solicitacao",
+    "name": "solicitacao"
+  } ],
+  "modelParameter": {
+    "temperature": 0.30000001,
+    "maxDecodeSteps": 1105,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

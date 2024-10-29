@@ -1,0 +1,135 @@
+{
+  "name": "454442d0-c6fc-403d-8e9b-53d14efffed4",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Vamos lá Helenice Guerra, em que posso lhe ajudar com a sua internet?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "quais são os planos de internet disponiveis?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Nós temos os seguintes planos disponíveis:\n- Fibra Turbo 100 Mega\n- Navegação Ilimitada 200 Mega\n- Mega Velocidade 500 Mega\n- Conexão Express 300 Mega\n- Wi-Fi Power 1 Giga\nQual plano você deseja contratar?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "qual é o meu plano?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "O seu plano atual é o Conexão Express 300 Mega."
+    }
+  }, {
+    "userUtterance": {
+      "text": "e qual é o plano acima do meu?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Temos 2 planos acima do seu:\n- Mega Velocidade 500 Mega:\n- Wi-Fi Power 1 Giga: "
+    }
+  }, {
+    "userUtterance": {
+      "text": "qual a diferença entre eles?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "O plano Mega Velocidade 500 Mega oferece velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.\nO plano Wi-Fi Power 1 Giga oferece velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.\nQual plano você deseja contratar?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "gostei do segundo qual o nome dele mesmo?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "O plano é o Wi-Fi Power 1 Giga."
+    }
+  }, {
+    "userUtterance": {
+      "text": "esse mesmo, quero atualizar o meu plano para esse ai"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Helenice Guerra, para atualizar seu plano para o Wi-Fi Power 1 Giga, preciso confirmar alguns dados. O seu cpf é 33311122244 correto?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim isso mesmo"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "o email do solicitante é Helenice.Guerra@xpto.com está correto?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim está"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Helenice Guerra, vou processar a atualização do seu plano para o Wi-Fi Power 1 Giga. Você receberá um e-mail com a confirmação da alteração.\nA atualização pode demorar até 8 horas para fazer efeito então pedimos que aguarde esse período para testar a nova velocidade, em alguns casos a atualização não demora tanto.\nLembrando também que a fatura desse mês constará duas cobranças proporicionais, uma da utilização do plano antigo desde o inicio do mês até hoje e outra com o novo plano contando de amanhã até o dia de fechamento da fatura.\nFicou alguma dúvida?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Não ficou não, muito obrigado!"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "O cliente deseja fazer um upgrade do plano de internet dele.\nConfirme o plano atual \nPergunte qual o novo plano\nConfirme o novo plano",
+    "actionParameters": {
+      "bairro": "Haroldo Veloso",
+      "cep": "98139-100",
+      "cpf": "33311122244",
+      "cpf_number": "64199654038",
+      "email": "Helenice.Guerra@xpto.com",
+      "endereco": "Rua Nestor de Andrade, 215",
+      "internet": "[1, Conexão Express 300 Mega]",
+      "nm_cliente": "Helenice Guerra",
+      "planos_internet": [ {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 100 Mbps, Wi-Fi de alta performance incluso e instalação grátis.",
+        "id_plano": 6,
+        "nome_plano": "Fibra Turbo 100 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 200 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso e assinatura de streaming de música grátis por 6 meses.",
+        "id_plano": 7,
+        "nome_plano": "Navegação Ilimitada 200 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.",
+        "id_plano": 8,
+        "nome_plano": "Mega Velocidade 500 Mega:"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.",
+        "id_plano": 9,
+        "nome_plano": "Conexão Express 300 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.",
+        "id_plano": 10,
+        "nome_plano": "Wi-Fi Power 1 Giga"
+      } ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Termina o auxilio e o direciona para o final",
+    "actionParameters": {
+      "nm_cliente": "Helenice Guerra"
+    }
+  },
+  "displayName": "Internet Upgrade de Plano - 2",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

@@ -1,0 +1,61 @@
+{
+  "name": "b3f042fc-e326-4c0d-80da-21fc714027eb",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Então Nair Belo, você quer saber informações sobre as suas faturas, tipo valores ou pendencias?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim, quais as condições que vocês tem?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Claro, Nair. Posso te oferecer parcelamento do valor total da sua fatura em até 4 vezes com 3 reais de juros ou a vista com 15% de desconto"
+    }
+  }, {
+    "userUtterance": {
+      "text": "quero fazer parcelado em 3 vezes"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Nair. Posso gerar uma nova fatura com o valor total de R$ 435,00 acrescido de R$ 3,00 de multa e juros, parcelada em 3 vezes de R$ 146,00. Qual a melhor data de vencimento para você?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "15/11"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Perfeito, vamos enviar três faturas, uma com o vencimento em 15 de novembro, outra com vencimento em 15 de dezembro e outra com vencimento em 15 de janeiro no valor de R$ 146,00 cada uma. Essas faturas serão enviadas para o \"Nair.Bello@xpto.com\".\nAjudo em algo mais?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "não, ja me ajudou"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Auxilia o cliente com a solicitação de parcelamento em até 4 vezes e com a emissão de novas faturas com novas datas de vencimento e se conseguir auxiliar finalize o contato, caso não, encaminhe para atendimento humano",
+    "actionParameters": {
+      "email": "Osmar.Fontes@xpto.com",
+      "nm_cliente": "Osmar Fontes",
+      "pendentes": [ "Data Vencimento: 2024-05-13 - Valor: R$ 149.0", "Data Vencimento: 2024-06-13 - Valor: R$ 150.0", "Data Vencimento: 2024-07-13 - Valor: R$ 137.0" ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Acabou a conversa"
+  },
+  "displayName": "contas_negociacao_prazo_3",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

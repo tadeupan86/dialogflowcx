@@ -1,0 +1,29 @@
+{
+  "name": "ff715941-d6bc-4ad1-a681-1d240a76a848",
+  "displayName": "Verifica Pendencias",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "webhook",
+    "tag": "get_faturas",
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.pendencia = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Direciona para Fluxo Contas",
+    "name": "1a14c398-9f4f-44ff-8823-6360f2b838f1"
+  }, {
+    "condition": "$session.params.pendencia = false",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Direciona para o Fluxo Solicitado",
+    "name": "0bd77f09-c876-4730-a824-e36200c8c69c"
+  } ]
+}

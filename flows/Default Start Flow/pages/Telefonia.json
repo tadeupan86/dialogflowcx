@@ -1,0 +1,27 @@
+{
+  "name": "3ea950a2-293d-4db3-8323-0523b2367f6c",
+  "displayName": "Telefonia",
+  "form": {
+    "parameters": [ {
+      "displayName": "solicitacao",
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      },
+      "defaultValue": "telefone"
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Verifica Pendencias",
+    "name": "af7d4bec-c108-4eb1-ab58-f5f6b5cce7a2"
+  } ]
+}

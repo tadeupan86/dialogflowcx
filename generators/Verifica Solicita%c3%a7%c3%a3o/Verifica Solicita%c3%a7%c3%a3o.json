@@ -1,0 +1,17 @@
+{
+  "name": "ac9d850a-f0a7-4e9c-9f09-02bc4ec3faa9",
+  "displayName": "Verifica Solicitação",
+  "placeholders": [ {
+    "id": "nm_cliente",
+    "name": "nm_cliente"
+  } ],
+  "modelParameter": {
+    "temperature": 0.30000001,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

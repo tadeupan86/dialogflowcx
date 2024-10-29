@@ -1,0 +1,71 @@
+{
+  "name": "4f4cb0fc-8539-4715-8c7f-20c110342790",
+  "displayName": "Dados Novo Cliente",
+  "form": {
+    "parameters": [ {
+      "displayName": "nm_cliente",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Qual o seu nome por favor?" ]
+            },
+            "languageCode": "pt-br"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "telefone",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Qual o número de telefone que podemos entrar em contato?" ]
+            },
+            "languageCode": "pt-br"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    }, {
+      "displayName": "dt_agendamento",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Qual a melhor data e hora pra entrarmos em contato?" ]
+            },
+            "languageCode": "pt-br"
+          } ],
+          "nextActionOverride": {
+          
+          }
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Confirmação Cliente",
+    "name": "3866aab0-418e-4b00-889f-d67aef799795"
+  } ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "c621bf32-9602-4174-8068-dac11c38256b",
+  "displayName": "Boas Vindas",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$request.generative.output" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "generators": [ {
+      "generator": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/generators/2e74f967-0eeb-42c5-90c2-8695bae391fa",
+      "outputParameter": "$request.generative.output"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "Solicita CPF",
+    "name": "9ef4ecdd-6fb7-4f86-8b79-17e8dea8b36c"
+  } ]
+}

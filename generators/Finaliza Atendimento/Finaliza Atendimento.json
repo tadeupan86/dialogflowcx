@@ -1,0 +1,20 @@
+{
+  "name": "71c73ac2-15c7-4168-8b6a-1c8267ad2595",
+  "displayName": "Finaliza Atendimento",
+  "placeholders": [ {
+    "id": "nm_usuario",
+    "name": "nm_usuario"
+  }, {
+    "id": "nm_cliente",
+    "name": "nm_cliente"
+  } ],
+  "modelParameter": {
+    "temperature": 0.30000001,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

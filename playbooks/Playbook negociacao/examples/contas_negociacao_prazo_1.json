@@ -1,0 +1,61 @@
+{
+  "name": "f7e49b0b-a156-4230-835e-9a4b4ad8511d",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Pronto, aqui eu posso te ajudar com as suas faturas Alice Silva, qual a sua solicitação?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "eu preciso regularizar minha situação"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Claro, Alice. Vejo aqui que você tem uma fatura em aberto com vencimento em 2024-06-15 no valor de R$ 131,00. Você gostaria de parcelar esse valor?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim por favor, da pra fazer em duas vezes?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Claro, Alice. Posso gerar uma nova fatura com o valor total de R$ 131,00 acrescido de R$ 3,00 de multa e juros, parcelada em 2 vezes de R$ 67,00. Qual a melhor data de vencimento para você?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "15/10"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Perfeito, vamos enviar duas faturas, uma com o vencimento em 09/12/2024 e outra com vencimento em 15 de outubro. Essas faturas serão enviadas para o \"Alice.Silva@xpto.com\".\nAjudo em algo mais?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Não muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Auxilia o cliente com a solicitação de parcelamento em até 2 vezes e com a emissão de novas faturas com novas datas de vencimento e se conseguir auxiliar finalize o contato, caso não, encaminhe para atendimento humano",
+    "actionParameters": {
+      "email": "Alice.Silva@xpto.com",
+      "nm_cliente": "Alice Silva",
+      "pendentes": [ "Data Vencimento: 2024-06-15 - Valor: R$ 131.0" ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Acabou a conversa"
+  },
+  "displayName": "contas_negociacao_prazo_1",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

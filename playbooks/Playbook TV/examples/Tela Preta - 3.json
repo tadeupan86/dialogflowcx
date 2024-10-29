@@ -1,0 +1,64 @@
+{
+  "name": "9ef5a037-a77e-41e9-b446-7b85a1a3f2ad",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Vamos lá, Letícia Souza, aqui eu posso lhe ajudar em duvidas sobre seu plano atual, atualização de plano e suporte da televisão."
+    }
+  }, {
+    "userUtterance": {
+      "text": "Então, minha televisão não ta dando sinal."
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendo, Letícia. Vamos tentar resolver isso. Primeiro, preciso confirmar seu email, que é leticia.souza@xpto.com , está correto?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Sim, está"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Letícia. E o seu CPF é 12345678901, está correto?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Sim, correto"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Certo, Letícia. Você possui o plano Bluenet TV Essencial. \nVerifique por gentileza, se seu aparelho receptor, está com a luz verde ou vermelha acesa?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Está com a luz verde"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Letícia. Tente desligar o receptor de sinal, aguarde 20 segundos e ligue-o novamente. Pode ter ocorrido uma falha de comunicação com o receptor de sinal, ou uma oscilação."
+    }
+  }, {
+    "userUtterance": {
+      "text": "Ok, retornou"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Que bom, Letícia. Fico feliz que tenha resolvido. Caso precise de mais alguma coisa, estou aqui."
+    }
+  }, {
+    "userUtterance": {
+      "text": "Obrigado."
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Auxilia o cliente com a solicitação sobre televisao e se conseguir auxiliar finalize o contato, caso não agende uma visita técnica"
+  },
+  "playbookOutput": {
+    "executionSummary": "Atendimento finalizado com sucesso.",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Tela Preta - 3",
+  "retrievalStrategy": "DEFAULT",
+  "languageCode": "pt-br"
+}

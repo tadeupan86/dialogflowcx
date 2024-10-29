@@ -1,0 +1,110 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "boa ",
+      "auto": true
+    }, {
+      "text": "noite",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "boa ",
+      "auto": true
+    }, {
+      "text": "tarde",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "parts": [ {
+      "text": "bom dia",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "2f61793e-a421-421a-b30b-6744656fd9bd",
+    "parts": [ {
+      "text": "há quanto tempo",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "2965d446-cd47-4ac4-a1f0-0be1e5ff3774",
+    "parts": [ {
+      "text": "olá",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "a38efa25-7a0d-4ed3-8eae-a03a220e988d",
+    "parts": [ {
+      "text": "oi",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "abd2037c-2add-47a8-8210-8ac7896c6574",
+    "parts": [ {
+      "text": "opa",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "fac311ed-223c-4c0b-b9b8-199f603c558b",
+    "parts": [ {
+      "text": "fala aí",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "c50c5d44-2f13-442d-84fa-19b5d445b507",
+    "parts": [ {
+      "text": "fala",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "677a78b6-c957-4c02-bf59-713c40d0618a",
+    "parts": [ {
+      "text": "saudações",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "20883ae1-8f6f-4f57-8e68-be738f524404",
+    "parts": [ {
+      "text": "oi tudo bem",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "e23c81a8-fdea-468f-a9b9-e7945f39eeca",
+    "parts": [ {
+      "text": "e aí",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  }, {
+    "id": "238a324a-e4ac-4b86-99b0-165d04127ecf",
+    "parts": [ {
+      "text": "eae",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "pt-br"
+  } ]
+}

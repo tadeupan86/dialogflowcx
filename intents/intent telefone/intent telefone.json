@@ -1,0 +1,16 @@
+{
+  "name": "6a0dcdca-c60e-47f1-886e-5a93fbc887b3",
+  "displayName": "intent telefone",
+  "parameters": [ {
+    "id": "url",
+    "entityType": "@sys.url"
+  }, {
+    "id": "location",
+    "entityType": "@sys.location"
+  }, {
+    "id": "person",
+    "entityType": "@sys.person"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 7
+}

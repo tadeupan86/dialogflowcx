@@ -1,0 +1,101 @@
+{
+  "name": "7ec3a7eb-391b-40de-a785-bb91ad3af741",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Vamos lá Nair Bello, qual a sua solicitação sobre a internet?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "o meu modem parece que está com problemas"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Nair Bello, primeiro me responda sobre as luzes do seu equipamento. A luz online está acessa ou piscando?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "A luz está acesa direto"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi, como a luz do seu modem está acesa, isso indica que o modem está recebendo sinal. Para solucionar o problema, você pode tentar reiniciar o modem. Para isso, desligue o modem da tomada, aguarde 20 segundos e ligue-o novamente. Isso pode resolver o problema.\nQuando ligar novamente o equipamento por favor me informe"
+    }
+  }, {
+    "userUtterance": {
+      "text": "pronto reinciei"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Christian, o problema foi resolvido?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "deixa eu testar"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Nair Bello, quando testar me informe se o problema foi resolvido."
+    }
+  }, {
+    "userUtterance": {
+      "text": "testei e resolveu, muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Exemplo de conversa onde o agente virtual consegue resolver um problema apenas orientando o cliente",
+    "actionParameters": {
+      "bairro": "Navegantes",
+      "cep": "93811-001",
+      "email": "Nair.Bello@xpto.com",
+      "endereco": "Rua Tangara, 870",
+      "internet": "[1, Navegação Ilimitada 200 Mega]",
+      "nm_cliente": "Nair Bello",
+      "planos_internet": [ {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 100 Mbps, Wi-Fi de alta performance incluso e instalação grátis.",
+        "id_plano": 6,
+        "nome_plano": "Fibra Turbo 100 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 200 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso e assinatura de streaming de música grátis por 6 meses.",
+        "id_plano": 7,
+        "nome_plano": "Navegação Ilimitada 200 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.",
+        "id_plano": 8,
+        "nome_plano": "Mega Velocidade 500 Mega:"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.",
+        "id_plano": 9,
+        "nome_plano": "Conexão Express 300 Mega"
+      }, {
+        "categoria_plano": "internet",
+        "descricao_plano": "Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.",
+        "id_plano": 10,
+        "nome_plano": "Wi-Fi Power 1 Giga"
+      } ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "a conversa é direcionada para o fluxo finaliza atendimento",
+    "actionParameters": {
+      "nm_cliente": "Nair Bello"
+    }
+  },
+  "displayName": "Internet Lenta - 2",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

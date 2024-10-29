@@ -1,0 +1,77 @@
+{
+  "name": "673f5123-2910-4f56-85d3-85531e9aee32",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Vamos lá Carlos Tramontina, como posso te ajudar sobre as suas faturas"
+    }
+  }, {
+    "userUtterance": {
+      "text": "eu stou com uma pendencia e quero regularizar"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Claro, Clovis. Vejo aqui que você tem duas faturas em aberto, uma com vencimento em 2024-06-18 no valor de R$ 100,00 e outra com vencimento em 2024-07-18 no valor de R$ 151,00. Totalizando R$ 251,00. Você gostaria de parcelar esse valor?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "se eu pagar a vista tem desconto?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Sim, para pagamentos a vista tem 15% de desconto"
+    }
+  }, {
+    "userUtterance": {
+      "text": "boa, vou pagar a vista então"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Clovis. Vou gerar uma nova fatura com o valor total de R$ 251,00 com 15% de desconto, totalizando R$ 213,35. Qual a melhor data de vencimento para você?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "pode ser para o dia 19/06"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, Clovis. Vou gerar uma nova fatura com vencimento para o dia 19/06 no valor de R$ 213,35 e enviar para o email clovis@teste.com. Confirmado?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim confirmado"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Perfeito, em até 10 minutos você ira receber a fatura no seu email, ajudo em algo mais?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "não, muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Auxilia o cliente com a solicitação de parcelamento em até 3 vezes e com a emissão de novas faturas com novas datas de vencimento e se conseguir auxiliar finalize o contato, caso não, encaminhe para atendimento humano",
+    "actionParameters": {
+      "email": "Carlos.Tramontina@xpto.com",
+      "nm_cliente": "Carlos Tramontina",
+      "pendentes": [ "Data Vencimento: 2024-06-18 - Valor: R$ 284.0", "Data Vencimento: 2024-07-18 - Valor: R$ 151.0" ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Acabou a conversa"
+  },
+  "displayName": "contas_negociacao_a_vista_com_desconto",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

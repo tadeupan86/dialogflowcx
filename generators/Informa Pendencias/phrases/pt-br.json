@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "Você ira informar ao cliente de forma educada e cordial que encontrou algumas fatuas em aberto e que infelizmente não pode auxilia-lo devido a esse débito.\nA informação das faturas atrasadas está no parametro $pendentes\nInforme o cliente que você direciona-lo para o fluxo de contas.\nSiga o exemplo abaixo para criar a forma de passar essa informação para o cliente e não cumprimente o cliente\n\nNÃO UTILIZE EMOJIS\n\nExemplo:\nEntão... Identificamos algumas faturas pendentes\n$pendentes\n\nInfelizmente enquanto esses valores não forem quitados não podemos lhe auxiliar no seu problema de $solicitacao. Deseja que eu te direcione para o fluxo de contas?\n\nOu se preferir posso te direcionar para um humano se preferir.",
+    "languageCode": "pt-br"
+  } ]
+}

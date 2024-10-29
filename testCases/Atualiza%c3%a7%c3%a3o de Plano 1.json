@@ -1,0 +1,216 @@
+{
+  "name": "3eedf92a-abd9-4739-8101-96fe59822494",
+  "displayName": "Atualização de Plano 1",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Ola"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Boas Vindas",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Bom dia" ]
+      }, {
+        "text": [ "\"Bem-vindo à Bluenet, sua provedora de serviços de telecomunicações de confiança. Estamos felizes em atendê-lo hoje.\"" ],
+        "containAiGeneratedContent": true,
+        "containGeneratorsContent": true
+      }, {
+        "text": [ "Por favor me informe o seu cpf" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "65123691831"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Verifica Solicitação",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Olá Paulo Munhoz, tudo bem? 👋\n\nAqui na Bluenet, podemos te ajudar com tudo relacionado à sua internet, televisão e telefonia! 🌐📺📱\n\nVocê precisa de ajuda com:\n\n* **Internet:**  Problemas de conexão, velocidade, planos, etc.\n* **Televisão:** Canais, programação, serviços de streaming, etc.\n* **Telefonia:** Ligações, planos, serviços adicionais, etc.\n* **Faturas:**  Pagamento, dúvidas, segunda via, etc.\n\nO que posso fazer por você hoje? 😊 \n" ],
+        "containAiGeneratedContent": true,
+        "containGeneratorsContent": true
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "quero falar sobre minha internet"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Olá Paulo Munhoz, tudo bem? Por aqui eu posso te ajudar com informações sobre seu plano de internet, alteração de plano ou suporte técnico. O que você deseja?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "você sabe me dizer qual o meu plano atual ?"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Claro, Paulo Munhoz. Você possui o plano Fibra Turbo 100 Mega." ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "e quais os planos acima deste?"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Os planos acima do Fibra Turbo 100 Mega são:\n- Navegação Ilimitada 200 Mega: Velocidade de download de até 200 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso e assinatura de streaming de música grátis por 6 meses.\n- Mega Velocidade 500 Mega: Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.\n- Conexão Express 300 Mega: Velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.\n- Wi-Fi Power 1 Giga: Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.\nQual plano você deseja contratar?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "qual a diferença entre o meu e o quarto plano que você falou?"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "O plano Conexão Express 300 Mega oferece velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.\nJá o plano Wi-Fi Power 1 Giga oferece velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.\nQual plano você deseja contratar?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "eu esqueci, você pode me falar os planos novamente por favor?"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Claro, Paulo Munhoz. Os planos disponíveis são:\n- Fibra Turbo 100 Mega: Velocidade de download de até 100 Mbps, Wi-Fi de alta performance incluso e instalação grátis.\n- Navegação Ilimitada 200 Mega: Velocidade de download de até 200 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso e assinatura de streaming de música grátis por 6 meses.\n- Mega Velocidade 500 Mega: Velocidade de download de até 500 Mbps, franquia de dados ilimitada, Wi-Fi 6 incluso, instalação grátis e assinatura de streaming de filmes e séries grátis por 3 meses.\n- Conexão Express 300 Mega: Velocidade de download de até 300 Mbps, franquia de dados ilimitada, Wi-Fi de alta performance incluso, instalação grátis e pacote de segurança digital incluso.\n- Wi-Fi Power 1 Giga: Velocidade de download de até 1 Gbps, franquia de dados ilimitada, roteador Wi-Fi 6 de última geração incluso, instalação grátis, suporte técnico premium e assinatura de streaming de jogos online grátis por 6 meses.\nQual plano você deseja contratar?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "quero o conexao express 300 megas"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Ok, Paulo Munhoz, para atualizar seu plano para o Conexão Express 300 Mega, preciso confirmar alguns dados. O cpf do solicitante é \"33311122244\" correto?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "sim"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "o email do solicitante é Paulo.Munhoz@xpto.com está correto?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "isso mesmo"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "textResponses": [ {
+        "text": [ "Ok, Paulo Munhoz, vou processar a atualização do seu plano para o Conexão Express 300 Mega. Você receberá um e-mail com a confirmação da alteração.\nA atualização pode demorar até 8 horas para fazer efeito então pedimos que aguarde esse período para testar a nova velocidade, em alguns casos a atualização não demora tanto.\nLembrando também que a fatura desse mês constará duas cobranças proporicionais, uma da utilização do plano antigo desde o inicio do mês até hoje e outra com o novo plano contando de amanhã até o dia de fechamento da fatura.\nFicou alguma dúvida?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "não ficou não"
+        },
+        "languageCode": "pt-br"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Finaliza Atendimento",
+        "flow": "Finaliza Atendimento"
+      },
+      "textResponses": [ {
+        "text": [ "Olá Paulo Munhoz, \n\nMuito obrigado pelo contato! Foi um prazer atendê-lo e espero que tenhamos solucionado sua solicitação com sucesso. \n\nLembre-se que a Bluenet está sempre à disposição para auxiliá-lo. Caso precise de algo mais, não hesite em entrar em contato novamente. \n\nAté mais!\n\nAtenciosamente,\n\nBluebot \nBluenet \n" ],
+        "containAiGeneratedContent": true,
+        "containGeneratorsContent": true
+      } ],
+      "currentFlow": {
+        "name": "Finaliza Atendimento"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1727296067,
+    "nanos": 988984000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  },
+  "languageCode": "pt-br"
+}

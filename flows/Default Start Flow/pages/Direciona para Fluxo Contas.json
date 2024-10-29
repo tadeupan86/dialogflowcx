@@ -1,0 +1,61 @@
+{
+  "name": "26acc317-340f-4985-9770-92ad9105c75f",
+  "displayName": "Direciona para Fluxo Contas",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$request.generative.output" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "generators": [ {
+      "generator": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/generators/3202acba-4f18-4b3d-b5d2-ef8c6d22f94c",
+      "inputParameters": [ {
+        "key": "pendentes",
+        "value": "$session.params.pendentes"
+      }, {
+        "key": "solicitacao",
+        "value": "$session.params.solicitacao"
+      } ],
+      "outputParameter": "$request.generative.output"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "Confirmação Direciona para Contas",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Contas Flow",
+    "name": "f9c01b1a-3343-4f59-a9b4-13ca0d498d01"
+  }, {
+    "intent": "Falar Com Humano",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Um minuto por favor" ]
+        },
+        "languageCode": "pt-br"
+      }, {
+        "payload": {
+          "ujet": {
+            "action": "escalation",
+            "escalation_reason": "by_virtual_agent",
+            "type": "action"
+          }
+        },
+        "languageCode": "pt-br"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "targetPage": "END_FLOW_WITH_HUMAN_ESCALATION",
+    "name": "8a87cd97-8e22-40ce-86cf-23a7098f96e9"
+  } ]
+}

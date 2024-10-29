@@ -1,0 +1,26 @@
+{
+  "name": "50813978-4550-4637-a82f-cee1c9bed51a",
+  "displayName": "Confirmação Cliente",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Entendido $session.params.nm_cliente, nós iremos entrar em contato com você através do número $session.params.telefone no dia $sessoin.params.dt_agendamento.\nMuito obrigado e até mais" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "278c9634-a609-486a-9a94-9f6ba8e95f01"
+  } ]
+}

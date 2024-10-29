@@ -1,0 +1,148 @@
+{
+  "name": "600d6d9c-1415-484e-a62a-24d516179ff3",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Ok senhor Carlos, em que posso lhe ajudar?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Quero fazer um upgrade"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "E para qual plano o senhor deseja mudar?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "qual e o meu plano mesmo?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Seu plano atual é o Conexão Total Controle"
+    }
+  }, {
+    "userUtterance": {
+      "text": "e quanto custa?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "O valor do seu plano atual é de R$ 85,00."
+    }
+  }, {
+    "userUtterance": {
+      "text": "beleza, muito obrigado, e quais os planos disponiveis alem do meu por favor?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Os planos disponíveis são:\n- Conecta+ Fale à Vontade por R$ R$ 50,00\n- Vozilimitado Total por R$ 58,00\n- Plano Falante Família por R$ 67,00\n- Conexão Total Controle por R$ 85,00\n- Fale Mais Internacional por R$ 93,00\n"
+    }
+  }, {
+    "userUtterance": {
+      "text": "eita, não ta caro, e nem uso tudo, na verdade quero fazer um downgrade"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi, para qual plano o senhor deseja mudar?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "qual a diferença entre o meu e o Voz ilimitado total?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "O Vozilimitado Total oferece ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados, WhatsApp sem descontar da franquia de dados e 20GB de internet, enquanto o seu plano atual, Conexão Total Controle, oferece ligações com minutos controlados (ex: 300 minutos para qualquer operadora), SMS com quantidade definida (ex: 500 SMS) e 15GB de internet."
+    }
+  }, {
+    "userUtterance": {
+      "text": "gostei vou ficar com esse"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, para realizar a troca do seu plano, preciso confirmar alguns dados com você. Você pode me informar o seu CPF?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "14517488098"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Ok, e o seu email?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Carlos.Tramontina@xpto.com"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Certo, vou realizar a troca do seu plano para o Vozilimitado Total. Você irá receber um e-mail com a confirmação da troca e no proximo dia útil o novo plano estara ativo, informo também sobre a cobrança proporcional dos planos na fatura que é referente aos periodos de utilização dos planos e lembrando que o novo plano é cobrado a partir de amanhã. O senhor ficou com alguma dúvida?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Não nenhuma muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Exemplo para suporte a linha muda",
+    "actionParameters": {
+      "bairro": "Cerqueira Cesar",
+      "cep": "31311-009",
+      "cpf_number": "14517488098",
+      "email": "Carlos.Tramontina@xpto.com",
+      "endereco": "Rua da Independência, 100",
+      "nm_cliente": "Carlos Tramontina",
+      "planos_telefonia": [ {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados e 10GB de internet + 5GB de bônus por 3 meses",
+        "id_plano": 1,
+        "nome_plano": "Conecta+ Fale à Vontade",
+        "valor_plano": "R$ 50,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados, WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 2,
+        "nome_plano": "Vozilimitado Total",
+        "valor_plano": "R$ 58,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": " Ligações ilimitadas para até 4 linhas adicionais da mesma operadora, SMS ilimitados, aplicativos de mensagem sem descontar da franquia de dados e 30GB de internet para compartilhar",
+        "id_plano": 3,
+        "nome_plano": "Plano Falante Família",
+        "valor_plano": "R$ 67,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações com minutos controlados (ex: 300 minutos para qualquer operadora), SMS com quantidade definida (ex: 500 SMS) e 15GB de internet. Ideal para quem usa pouco o telefone.",
+        "id_plano": 4,
+        "nome_plano": "Conexão Total Controle",
+        "valor_plano": "R$ 85,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, minutos para ligações internacionais (ex: 100 minutos), WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 5,
+        "nome_plano": "Fale Mais Internacional",
+        "valor_plano": "R$ 93,00"
+      } ],
+      "telefonia": "[ 1, Conexão Total Controle ]"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Verifico se a linha esta muda",
+    "actionParameters": {
+      "cpf_number": "14517488098",
+      "nm_cliente": "Carlos Tramontina"
+    }
+  },
+  "displayName": "Downgrade de Plano - 1",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

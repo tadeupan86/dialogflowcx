@@ -1,0 +1,11 @@
+{
+  "name": "3729a377-3583-4fc9-aba2-54cbdf3061ee",
+  "displayName": "webhook",
+  "genericWebService": {
+    "uri": "https://webhook-demo-ccai-570626036202.us-central1.run.app/backend_functions",
+    "webhookType": "STANDARD"
+  },
+  "timeout": {
+    "seconds": 10
+  }
+}

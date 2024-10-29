@@ -1,0 +1,73 @@
+{
+  "name": "1921462a-6462-480d-a17a-75318560e821",
+  "displayName": "Suporte",
+  "form": {
+    "parameters": [ {
+      "displayName": "Lista",
+      "required": true,
+      "entityType": "@sys.currency-name",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "nextActionOverride": {
+          
+          }
+        },
+        "repromptEventHandlers": [ {
+          "targetPage": "Opção 1 Suporte Técnico",
+          "event": "sys.long-utterance",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Escolha uma Opção" ]
+              },
+              "languageCode": "pt-br"
+            } ],
+            "nextActionOverride": {
+            
+            }
+          },
+          "name": "12b23727-ad11-4f42-9e76-8081c5f66991"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.opção = \"Opção 3\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Opção 3 Comercial/Vendas",
+    "name": "8db67982-00aa-4009-9211-5595e42d6850"
+  }, {
+    "condition": "$page.params.opção = \"Opção 1\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Opção 1 Suporte Técnico",
+    "name": "8eaefcb4-12d5-484d-a3cf-afc75fe38383"
+  }, {
+    "condition": "$page.params.opção = \"Opção 2\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Opção 2 Financeiro",
+    "name": "0f96fb4c-6cdc-4e72-80b8-af6ad2b9129d"
+  }, {
+    "condition": "$page.params.opção = \"Opção 4\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Opção 4 Atendimento ao Cliente",
+    "name": "ab168aaa-3c37-480c-9f26-8085495a7040"
+  }, {
+    "condition": "$page.params.opção = \"Opção 5\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Opção 5 Outros Assuntos",
+    "name": "0af22bdb-716f-4a81-be51-84a0818420f3"
+  } ]
+}

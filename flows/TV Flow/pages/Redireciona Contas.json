@@ -1,0 +1,26 @@
+{
+  "name": "e8c936cd-d41e-4a8d-9ceb-2065236d3e9b",
+  "displayName": "Redireciona Contas",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Identificamos algumas faturas pendentes\r\n$session.params.pendentes\r\n\r\nInfelizmente enquanto esses valores não forem quitados não podemos lhe auxiliar no seu problema de internet. Deseja que eu te direcione para o fluxo de contas?" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "intent": "Confirmação Direciona para Contas",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Contas Flow",
+    "name": "8be144f2-1dd4-4a26-86c8-eb5bd3f05cd5"
+  } ]
+}

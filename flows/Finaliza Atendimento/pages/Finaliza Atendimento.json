@@ -1,0 +1,37 @@
+{
+  "name": "f5a3049d-3342-487b-9680-bcfda64b9da8",
+  "displayName": "Finaliza Atendimento",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "$request.generative.output" ]
+      },
+      "languageCode": "pt-br"
+    } ],
+    "generators": [ {
+      "generator": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/generators/71c73ac2-15c7-4168-8b6a-1c8267ad2595",
+      "inputParameters": [ {
+        "key": "nm_cliente",
+        "value": "$session.params.nm_cliente"
+      }, {
+        "key": "nm_usuario",
+        "value": "$session.params.nm_cliente"
+      } ],
+      "outputParameter": "$request.generative.output"
+    } ],
+    "nextActionOverride": {
+    
+    }
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "760e8f9f-56e3-457f-9496-40fce164e8ee"
+  } ]
+}

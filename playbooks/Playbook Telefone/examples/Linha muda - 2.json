@@ -1,0 +1,106 @@
+{
+  "name": "897d6065-3fb4-4d92-90b9-978a37eb2940",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Nesse ponto eu posso te ajudar com suporte a sua linha, alteração do seu plano, informações sobre o seu plano e até mesmo a troca do seu aparelho. O que você precisa hoje Gustavo Pereira?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Minha linha está muda, eu tento ligar mas nem inicia a ligação."
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi, você tenta fazer a ligação e o que acontece?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Nada nem conecta, simplesmente cai."
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi Gustavo Pereira, eu vi aqui parece que um problema no seu chip, quando foi a ultima vez que o senhor tentou fazer uma ligação?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Hoje mesmo, agora a pouco, tem uns 15 min no maximo"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Pra mim aparece que a última tentativa de ligação ocorreu a 3 dias atrás.\nEu vou fazer uma solicitação de envio de um novo chip no seu endereço, o senhor permite que eu faça essa solicitação?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "sim permito sim"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendido, um novo chip será enviado para Rua Oscar Porto, 400 no bairro da Gamelinha. O prazo de entrega é de até 5 dias uteis. Ajudo em algo mais?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Não Bluebot, você ja me ajudou demais, muito obrigado"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/523ff440-dc4a-4500-b696-a69be75115bb",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Exemplo 2 para suporte a linha muda",
+    "actionParameters": {
+      "bairro": "Gamelinha",
+      "cep": "39123-010",
+      "email": "Gustavo.Pereira@xpto.com",
+      "endereco": "Rua Oscar Porto, 400",
+      "nm_cliente": "Gustavo Pereira",
+      "planos_telefonia": [ {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados e 10GB de internet + 5GB de bônus por 3 meses",
+        "id_plano": 1,
+        "nome_plano": "Conecta+ Fale à Vontade",
+        "valor_plano": "R$ 50,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, SMS ilimitados, WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 2,
+        "nome_plano": "Vozilimitado Total",
+        "valor_plano": "R$ 58,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": " Ligações ilimitadas para até 4 linhas adicionais da mesma operadora, SMS ilimitados, aplicativos de mensagem sem descontar da franquia de dados e 30GB de internet para compartilhar",
+        "id_plano": 3,
+        "nome_plano": "Plano Falante Família",
+        "valor_plano": "R$ 67,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações com minutos controlados (ex: 300 minutos para qualquer operadora), SMS com quantidade definida (ex: 500 SMS) e 15GB de internet. Ideal para quem usa pouco o telefone.",
+        "id_plano": 4,
+        "nome_plano": "Conexão Total Controle",
+        "valor_plano": "R$ 85,00"
+      }, {
+        "categoria_plano": "telefonia",
+        "descricao_plano": "Ligações ilimitadas para qualquer operadora do Brasil, minutos para ligações internacionais (ex: 100 minutos), WhatsApp sem descontar da franquia de dados e 20GB de internet.",
+        "id_plano": 5,
+        "nome_plano": "Fale Mais Internacional",
+        "valor_plano": "R$ 93,00"
+      } ],
+      "telefonia": "[ 1, Conecta+ Fale à Vontade ] "
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Verifico se a linha esta muda",
+    "actionParameters": {
+      "nm_cliente": "Barbara Borges"
+    }
+  },
+  "displayName": "Linha muda - 2",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

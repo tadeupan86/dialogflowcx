@@ -1,0 +1,77 @@
+{
+  "name": "d8e89a9a-ec77-4d31-976b-9cd09065dffc",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Em que posso te ajudar na parte de faturas Julio?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "eu quero regularizar minha conta"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Claro, Julio. Vejo aqui que você tem duas faturas em aberto, uma com vencimento em 2024-06-18 no valor de R$ 284,00 e outra com vencimento em 2024-07-18 no valor de R$ 151,00. Totalizando R$ 435,00. Você gostaria de parcelar esse valor?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "tem desconto?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Não, não temos descontos para pagamentos parcelados."
+    }
+  }, {
+    "userUtterance": {
+      "text": "e a vista?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Para pagamentos a vista tem 15% de desconto"
+    }
+  }, {
+    "userUtterance": {
+      "text": "não tem outra negociação? eu sei que estou devendo e quero pagar"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendo, Julio. Posso gerar uma nova fatura com o valor total de R$ 435,00 acrescido de R$ 3,00 de multa e juros. Qual a melhor data de vencimento para você?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "mas eu quero um desconto ou uma outra forma de parcelamento, isso não me ajuda em nada"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Entendi senhor Juilio, infelizemente por aqui só consigo te ajudar com essas parametros, mas se quiser posso te direcionar para um huamano. O senhor deseja?\n"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Sim por favor"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "projects/blueshift-contactcenterai/locations/global/agents/41b95c9d-e52a-48a5-b5b5-6481518817d6/flows/c7c744c7-ad46-43b3-9da7-cab7b26d4486",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Auxilia o cliente com a solicitação de parcelamento em até 4 vezes e com a emissão de novas faturas com novas datas de vencimento e se conseguir auxiliar finalize o contato, caso não, encaminhe para atendimento humano",
+    "actionParameters": {
+      "email": "julius@blue.com",
+      "nm_cliente": "Julio",
+      "pendentes": [ "Data Vencimento: 2024-06-18 - Valor: R$ 284.0", "Data Vencimento: 2024-07-18 - Valor: R$ 151.0" ]
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Acabou a conversa"
+  },
+  "displayName": "contas_negociacao_falar com atendente",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}
